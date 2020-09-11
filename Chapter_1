@@ -1,1 +1,34 @@
+class Wizards:
 
+	def __init__(self, wizard_name,wizard_blood,choice_of_side, age, gender,eye_colour, hair_colour, equipment, pet):
+		self.wizard_name= [wizard_name]
+		self.wizard_blood= [wizard_blood]
+		self.choice_of_side= [choice_of_side]
+		self.age= [age]
+		self.gender= [gender]
+		self.eye_colour= [eye_colour]
+		self.hair_colour= [hair_colour]
+		self.equipment= [equipment]
+		self.pet= [pet]
+		self.description={
+		"wizard_name": ""
+		}
+
+	def describe_wizard(self):
+		print(f"{self.wizard_name}, {self.wizard_blood}, {self.choice_of_side}")
+		print(f"{self.gender} is {self.age} years old, {self.gender} has {self.eye_colour} eyes with {self.hair_colour} hair! ")
+		print(f"{self.gender} has {self.equipment} and a {self.pet}")
+
+	
+	def store_response(self, new_response):
+		self.responses.append(new_response)
+		
+
+
+
+wizard_1=Wizards('Harry Potter', 'wizard', 'good', 12, 'he', 'blue', 'brown', 'glasses', 'an owl')
+wizard_1.describe_wizard()
+wizard_2=Wizards('Hermione Granger', 'half blood','good', 12, 'she', 'brown', 'brown', 'an endless bag', 'cat')
+wizard_2.describe_wizard()
+wizard_3=Wizards('Ron Weasley', 'wizard', 'good', 12, 'he', 'brown', 'red', 'a broken wound', 'rat')
+wizard_3.describe_wizard()
